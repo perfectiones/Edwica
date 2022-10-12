@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Добавить компанию" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="container max">
+            @@include('html/_stepscr.htm',{})
+               <div class="form__wrapper">
+                    <div class="col-12 section__title">Данные компании</div>
+                    <div>
+                        <label for="companyType first" class="input__title">ИНН</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">КПП</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Юридический адрес</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Почтовый адрес</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div class="line" style="margin: 27px -15px 19px -49px;">
+                    </div>
+                    <div class="col-12 section__title">Платежные данные</div>
+                    <div>
+                        <label for="companyType first" class="input__title">Валюта вашего банка</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Владелец счета</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Расчетный счет</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-12 section__title">Данные банка</div>
+                    <div>
+                        <label for="companyType first" class="input__title">Полгое наименование банка</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Юридический адрес обслуживающего отделения</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">БИК</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Кореспонденский счет</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Комментарий (в том случае, если вам не хватило полей или какие то поля по какой то причине вам не подходят, то наишите недостающую информацию в комментации) </label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div class="stages__nav" style="margin-top:60px;">
+                        <div class="prevStage">
+                            <a href="add__compStage3.html"><button class="prevStage">Предыдущий этап</button></a>
+                        </div>
+                        <div class="">
+                            <a href="add__compStage5.html"><button class="nextStage">Следующий этап</button></a>
+                        </div>
+                    </div>
+                    <div class="MobileStages__nav" style="margin-top:46px;">
+                        <div class="prevStage">
+                            <a href="add__compStage3.html"><button class="prevStage mob">Назад</button></a>
+                        </div>
+                        <div class="">
+                            <a href="add__compStage5.html"><button class="nextStage mob2">Далее</button></a>
+                        </div>
+                    </div>
+               </div>
+        </main>
+    </div>
+    @@include('html/_footer.htm',{})
+    @@include('html/_modal.htm',{})
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</div>
+  </body>
+</html>

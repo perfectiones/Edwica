@@ -1,0 +1,156 @@
+.teachers{
+    display: flex;
+
+    &__form{
+        background: #FFFFFF;
+        border: 1px solid #EFE8F8;
+        border-radius: 16px;
+        
+        padding: 23px 16px 19px;
+        width: 312px;
+        @media (max-width:900px) {
+            width: 192px;
+        }
+        .form__info{
+            margin-left: 9px;
+
+            @media (max-width:900px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+           .photo{
+            width: 88px;
+            height: 83px;
+
+            border-radius: 50%;
+            background-color: #C4C4C4;
+            margin-bottom: 32px;
+           }
+           .name{
+            margin: 32px 0 12px;
+
+            font-weight: 600;
+            line-height: 20px;
+
+           }
+           .experience{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+
+            color: rgba(0, 0, 0, 0.5);
+
+            margin-bottom: 71px;
+           }
+        }
+        .form__buttons{
+            display: flex;
+            justify-content: space-between;
+            button{
+                width: 236px;
+                height: 36px;
+
+                background: #F9F4FF;
+
+                border: 1px solid #E6E0FA;
+                border-radius: 8px;
+
+                color: $colorSt;
+
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                @media (max-width:900px) {
+                    width: 139px;
+                }
+            }
+            div{
+             display: flex;
+             justify-content: center;
+             width: 36px;
+             height: 36px;
+             
+             background: #FEEEE6;
+             
+             border: 1px solid #FFC8C5;
+             border-radius: 8px;
+             align-items: center;
+            }
+        }
+    }
+    &__add{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 312px;
+        height: 316px;
+
+        border: 2px dashed #E6E0FA;
+        border-radius: 16px;
+
+        margin-left: 16px;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .button{
+                position: relative;
+                width: 40px;
+                height: 40px;
+
+                border-radius: 50%;
+
+                background: #F9F4FF;
+                
+                
+            }
+            .button::after{
+                content: "";
+
+                position: absolute;
+
+                width: 12px;
+                height: 4px;
+
+                background-color: #B298EE;
+            
+                border-radius: 2px;
+
+                top: 50%;
+                left: 35%;
+
+            }
+            .button::before{
+                content: "";
+
+                position: absolute;
+
+                width: 12px;
+                height: 4px;
+
+                background-color: #B298EE;
+            
+                border-radius: 2px;
+
+                top: 50%;
+                right: 35%;
+
+                transform: rotate(90deg);
+                
+            }
+            .text{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+
+                color: $colorSt;
+
+                margin-top: 8px;
+            }
+        }
+    }
+}

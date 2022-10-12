@@ -1,0 +1,110 @@
+
+.way__title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px   ;
+    @media (max-width:900px) {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .title__text{
+        font-weight: 600;
+        @include adaptive-font(36,20);
+
+        color: #392B4B;
+        @media (max-width:900px) {
+            text-align: end;
+        }
+    }
+}
+
+
+.title__button{
+    background: #F9F4FF;
+
+    border: 1px solid #E6E0FA;
+    border-radius: 8px;
+
+    width: 128px;
+    height: 44px;
+
+    color:$colorSt;
+}
+.way{
+    width: 952px;
+    height: 108px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #EFE8F8;
+    border-radius: 16px;
+
+    margin: 24px 0 21px;
+
+    &__steps{
+        display: flex;
+        .step{
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .step-circle{
+                cursor: pointer;
+                color: $colorSt;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                margin: 16px auto;
+               
+
+                width: 40px;
+                height: 40px;
+
+                font-weight: 600;
+                font-size: 16px;
+
+                border-radius: 50%;
+
+                box-shadow: 0px 2px 8px rgba(24, 29, 54, 0.1);
+
+                &.active{
+                    color:#FFFFFF;
+                    background-color: $colorSt;
+                }
+                &.complete{
+                    background-color: #1F9756;
+                }
+               
+            } 
+            
+        }
+        .line{
+        margin: auto 0;
+
+        height: 2px;
+        width: 48px;
+        @media (max-width:900px) {
+            margin-bottom: 54px;
+            width: 24px !important;
+        }
+        @media (max-width:360px) {
+            margin-bottom: 54px;
+            width: 4px;
+        }
+        border-bottom:2px dashed #DFDBEE;
+    }
+    }
+
+
+}
+
+.step__title{
+    font-weight: 600;
+    @include adaptive-font(14,8);
+    line-height: 20px;
+
+    color: #7D59CA;
+
+}

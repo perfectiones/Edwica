@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Добавить компанию" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="container max">
+            @@include('html/_stepscr.htm',{})
+               <div class="form__wrapper">
+                <div class="col-12 form__title">О компании</div>
+                <div class="flex-s_b upload__logo">
+                    <div class="download__logo"> 
+                        <label for="withLogo">
+                            Лого с названием
+                            <span>course_picture.png</span>
+                        </label>
+                        <button class="button__download">Загрузить</button>
+                        <input type="file" name="" id="withLogo" class="input__file" accept=".jpg, .png">
+                    </div>
+                    <div class="download__logo">
+                        <label for="noLogo">
+                            Лого с названием
+                            <span>course_picture.png</span>
+                        </label>
+                        <button class="button__download">Загрузить</button>
+                    <input type="file" name="" id="noLogo" class="input__file" accept=".jpg, .png"></div>
+                </div>
+                <div>
+                    <div class="download__cover">
+                    <label for="cover">
+                        Загрузите обложку курса или приветственное видео
+                        рекоммендуемое разрешение 1074x280<br>
+                        <span> course_picture.png </span> <br>
+                    </label>
+                    <button class="button__download">Загрузить</button>
+                    <input type="file" id="cover" class="input__file" accept=".jpg, .png">
+                </div>
+                </div>
+                <div>
+                    <label for="companyType first" class="input__title">Тип компании</label><br>
+                    <input type="text" id="companyType" placeholder="Компания" class="ownForm inputText" >
+                </div>
+                    <div>
+                        <label for="companyType" class="input__title">Полное наименоание компании</label><br>
+                        <input type="text" id="companyType" class="inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType" class="input__title">Сокращенное наименование компании</label><br>
+                        <input type="text" id="companyType"  class="inputText">
+                    </div>
+                    <div>
+                        <label for="companyType" class="input__title">Наименование вашего сайта</label><br>
+                        <input type="text" id="companyType"  class="inputText">
+                    </div>
+                    <div>
+                        <label for="companyType" class="input__title">Подробно о компании</label><br>
+                        <textarea id="companyType"  class="companyInfo inputText" style="min-height:90px ;"></textarea>
+                    </div>
+                    <div>
+                        <label for="companyType" class="input__title">Цель компании</label><br>
+                        <input type="text" id="companyType"  class="inputText">
+                    </div>
+                    <div>
+                        <label for="form__radio" class="radio__title">У вас есть образовательная лицензия?</label><br>
+                        <div style="margin-top:16px;" class="flex-c-a">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1 check">
+                            <label class="form-check-label yes" for="flexRadioDefault1" >
+                                Да
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Нет
+                            </label>
+                        </div>
+                    </div>
+                    <div class="education" id="block2">
+                        <div>
+                            <label for="educat_doc" class="input__title">Образовательная лицензия</label><br>
+                            <input type="text" id="educat_doc" class="education__input">
+                        </div>
+                        <div>
+                            <label for="educat_href" class="input__title">Ссылка на документ</label><br>
+                            <input type="text" id="educat_href" class="education__input">
+                        </div>
+                    </div>
+                    <div class="form__title company_history">
+                        История компании
+                    </div>
+                    <div>
+                        <button class="history__button">Добавить веху</button>
+                    </div>
+                    <div class="stages__nav">
+                        <div class="">
+                            <a href="add_compStage1.html"><button class="nextStage">Следующий этап</button></a>
+                        </div>
+                    </div>
+                    <div class="MobileStages__nav">
+                        <div class="">
+                            <a href="add_compStage1.html"><button class="nextStage mob2" style="margin-left:0 ;">Далее</button></a>
+                        </div>
+                    </div>
+               </div>
+        </main>
+    </div>
+    @@include('html/_footer.htm',{})
+    @@include('html/_modal.htm',{})
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</div>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Добавить компанию" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="container max">
+            @@include('html/_stepscr.htm',{})
+                    <div class="row form__wrapper">
+                        <div class="col-12 section__title">О компании</div>
+                        <div class="flex-s_b upload__logo">
+                            <img src="/src/img/cover.jpg" alt="">
+                                <div class="download__logo logo_2">
+                                    <label for="inputfile1"><div class="download__title"> Загрузите лого </div>
+                                        <span class="download__subtitle">course_picture.png</span>
+                                    </label>
+                                    <button class="button__download">Загрузить</button>
+                                    <input type="file" class="input__file" id="inputfile1" accept=".jpg, .png">
+                                </div>
+                                <div class="download__cover cover_2">
+                                    <label for="inputfile1"><div class="download__title">Загрузите обложку курса или приветственное видео
+                                        рекоммендуемое разрешение 1074x280</div>
+                                        <span class="download__subtitle">course_picture.png</span>
+                                    </label>
+                                    <button class="button__download">Загрузить</button>
+                                    <input type="file" class="input__file" id="inputfile2">
+                                </div>
+                        </div>
+                        <div>
+                            <label for="inputText" class="input__title">Название организации (юр.лицо)</label><br>
+                            <input type="text" id="inputText" class="inputText">
+                        </div>
+                        <div>
+                            <label for="inputText" class="input__title">Название сервиса</label><br>
+                            <input type="text" id="inputText" class="inputText">
+                        </div>
+                        <div>
+                            <label for="inputText" class="input__title">Ссылка на сайт</label><br>
+                            <input type="text" id="inputText" class="inputText">
+                        </div>
+                        <div>
+                            <label for="inputText" class="input__title">Подробно о компании</label><br>
+                            <textarea id="inputText" class="companyInfo inputText" style="min-height:92px;"></textarea>
+                        </div>
+                        <div>
+                            <label for="inputText" class="input__title">Цель компании</label><br>
+                            <input type="text" id="inputText" class="inputText">
+                        </div>
+                        <div>
+                            <label for="form__radio" class="radio__title">У вас есть образовательная лицензия?</label><br>
+                            <div style="margin-top: 16px;">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label yes" for="flexRadioDefault1">
+                                     Да
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Нет
+                                </label>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <div>
+                                <label for="educat_doc" class="input__title">Образовательная лицензия</label><br>
+                                <input type="text" id="educat_doc" class="education__input">
+                            </div>
+                            <div>
+                                <label for="educat_href" class="input__title">Ссылка на документ</label><br>
+                                <input type="text" id="educat_href" class="education__input">
+                            </div>
+                        </div>
+                        <div class="section__title company_history">
+                            История компании
+                        </div>
+                        <div class="company__list">
+                            <div class="list__items">
+                                <div>
+                                    <div class="circle">1</div>
+                                    <div class="data">
+                                        <p>март 2022</p>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="item__delete">
+                                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                                <div class="info">
+                                    <p>Здесь есть все для вашего удобства: записи занятий, домашние задания, разборы,<br> дополнительные варианты</p>
+                                </div>
+                        </div>
+                        <div class="hide__button">
+                            <button class="history__button">Добавить веху</button>
+                        </div>
+                        <div class="company__list list__first">
+                            <div class="list__items">
+                                <div>
+                                    <div class="circle">2</div>
+                                    <div class="data">
+                                        <p>март 2022</p> 
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                    <div class="item__delete">
+                                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                      
+                                    </div>
+                            </div>
+                                    <div class="info">
+                                        <p>Здесь есть все для вашего удобства: записи занятий, домашние задания, разборы,<br> дополнительные варианты</p>
+                                    </div>
+                            </div>
+                        <div>
+                            <button class="history__button">Добавить веху</button>
+                        </div>
+                        <div class="stages__nav">
+                            <a href="add_compStage2.html"><button class="nextStage">Следующий этап</button></a>
+                        </div>
+                        <div class="MobileStages__nav">
+                            <div class="prevStage">
+                                <a href="add_compStage1.html"><button class="prevStage mob">Назад</button></a>
+                            </div>
+                            <div class="">
+                                <a href="add_compStage2(2).html"><button class="nextStage mob2">Далее</button></a>
+                            </div>
+                        </div>
+                </div
+    </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

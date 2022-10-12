@@ -1,0 +1,317 @@
+.modal-title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    padding: 31px 32px;
+    @media (max-width:900px) {
+        
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px
+    }
+}
+.modal__companyNumber{
+    top: 15%;
+
+    @media (max-width:900px) {
+        top:17%;
+    }
+    .companyNumber__content{
+        left: -50%;
+        width: 1003px;
+        height: 317px;
+        border-radius: 16px;
+        @media (max-width:900px) {
+            left: 0%;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .modal-body{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 59px 0 110px;
+            @media (max-width:900px) {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+            .companyNumber__item{
+                max-width: 202px;
+                max-height: 161px;
+
+                display: flex;
+                flex-direction: column;
+                @media (max-width:900px)  {
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                }
+            }
+            .item__head{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 35px;
+                .head__img{
+                    position: absolute;
+                    left: 0%;
+                }
+            }
+            .item__text{
+                margin-top: 22px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+.modal__adventages{
+    top: 4%;
+   .modal-content{
+        right: 40%;
+        width: 900px;
+        height: 100%;
+        @media (max-width:900px) {
+            width: 100%;
+            right: 0%;
+        }
+        .advantages__item{
+            margin-bottom: 48px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+
+            color: #392B4B;
+
+            margin: 16px 0 16px;
+        }
+        .text{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px
+
+        }
+   }
+
+}
+
+.modal__chooseBlock{
+    .title{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+
+        color: #392B4B;
+
+        margin-bottom: 44px;
+    }
+    .modal-content{
+        width: 1058px;
+        height: 100%;
+        right: 54%;
+        @media (max-width:900px) {
+            width: 100%;
+            left: 0%;
+        }
+        .item__title{
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 36px;
+
+            color: #392B4B;
+        }
+            .text{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+
+                color: #392B4B;
+            }
+            input{
+                border: 2px solid #A897BD;
+                border-radius: 4px;
+
+                width: 18px;
+                height: 18px;
+                margin-left: 75%;
+
+            }
+       
+    }
+    .input__row{
+        margin-bottom: 48px;
+        @media (max-width:900px) {
+            background: #EFE8F8;
+        }
+
+    }
+    .sertificat__row{
+        align-items: center;
+
+
+        .text{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+
+            color: #392B4B;
+        }
+        .sertificat{
+            display: flex;
+            justify-content: flex-end;
+            margin: 27px 0 30px;
+            div{
+            width: 351px;
+            height: 247px;
+
+            background-color:#F3A919;
+
+            border-radius: 16px;
+            }           
+        }
+    }
+   .text__row{
+        align-items: center;
+        .text__block{
+            display: flex;
+            flex-direction: column;
+
+            .title{
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 36px;
+
+                color: #392B4B;
+                margin-bottom: 24px;
+            }
+            .text{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+
+                color: #392B4B;
+                span{
+                    font-size: 16px;
+                    color: black;
+                }
+            }
+        }
+        .video{
+            display: flex;
+            justify-content: flex-end;
+          
+            div{
+                @media (max-width:900px) {
+                    margin: 14px 0 40px;
+                }
+                 width: 489px;
+                height: 280px;
+                border-radius: 18px;
+
+                background: #090D1C;
+                opacity: 0.5;
+            }
+           
+        }
+    }
+    .carousel-item {
+        display: flex;
+        justify-content: space-around;
+        .slide{
+            width: 420px;
+            height: 238px;
+            margin-right: 10px;  
+            background-color: #090D1C;
+            
+            border-radius: 10px;
+        }
+    }
+}
+
+.btn-close{
+    margin-right: 1%;
+}
+
+.modal-addTeacher{
+  .modal-content{
+    width: 728px;
+    height: 724px;
+
+    left: -23%;
+    background-color: #FFFFFF;
+    .modal-body{
+        margin-left: 32px;
+        .modal-title{
+            padding: 32px 0 0 0;
+        }
+        .input__title{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: #392B4B;
+            padding: 0;
+
+            margin: 40px 0 4px 0;
+        }
+        
+        .teacher__name{
+            display: flex;
+            gap: 24px;
+
+            
+            .inputText{
+                width: 304px;
+            }
+        }
+        .inputText{
+            width: 632px;
+            height: 44px;
+        }
+        .modal__button{
+            display: flex;
+            justify-content: end;
+            gap: 24px;
+
+            margin: 32px 0 0 0;
+            .button__cancel{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+
+                color: $colorSt;
+
+                width: 126px;
+                height: 44px;
+
+                background: #F9F4FF;
+
+                border: 1px solid #E6E0FA;
+                border-radius: 8px;
+            }
+            .button__complete{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+
+                width: 102px;
+                height: 44px;
+
+                
+                color: #FFFFFF;
+                background-color: $colorSt;
+                border-radius: 8px;
+            }
+        }
+    }
+  }
+
+}

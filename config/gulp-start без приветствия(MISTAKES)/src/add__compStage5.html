@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Добавить компанию" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="container max">
+            @@include('html/_stepscr.htm',{})
+               <div class="form__wrapper">
+                    <div class="col-12 section__title">Истории успеха</div>
+                    <div class="company__list">
+                        <div class="list__items">
+                            <div>
+                                <div class="circle">1</div>
+                                <div class="data">
+                                    <p>ФИО</p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__delete">
+                                <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>История успеха</p>
+                        </div>
+                        <div>
+                            <input type="file" name="" id="info__ulpoad"><br>
+                            <label for="info__ulpoad">
+                                <button class="button__add" style="margin-left: 0; margin-right: 0;">Загрузить файл</button>
+                            </label>
+                            
+                        </div>
+                        <div>
+                            <button class="history__button">Добавить пункт</button>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">КПП</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Юридический адрес</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Почтовый адрес</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div class="line" style="margin: 27px -15px 19px -49px;">
+                    </div>
+                    <div class="col-12 section__title">Платежные данные</div>
+                    <div>
+                        <label for="companyType first" class="input__title">Валюта вашего банка</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Владелец счета</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Расчетный счет</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-12 section__title">Данные банка</div>
+                    <div>
+                        <label for="companyType first" class="input__title">Полгое наименование банка</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Юридический адрес обслуживающего отделения</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">БИК</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Кореспонденский счет</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Комментарий (в том случае, если вам не хватило полей или какие то поля по какой то причине вам не подходят, то наишите недостающую информацию в комментации) </label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div class="stages__nav" style="margin-top:60px;">
+                        <div class="prevStage">
+                            <a href="add_compStage1.html"><button class="prevStage">Предыдущий этап</button></a>
+                        </div>
+                        <div class="">
+                            <a href="add_compStage2(2).html"><button class="nextStage">Следующий этап</button></a>
+                        </div>
+                    </div>
+                    <div class="MobileStages__nav" style="margin-top:46px;">
+                        <div class="prevStage">
+                            <a href="add_compStage1.html"><button class="prevStage mob">Назад</button></a>
+                        </div>
+                        <div class="">
+                            <a href="add_compStage2(2).html"><button class="nextStage mob2">Далее</button></a>
+                        </div>
+                    </div>
+               </div>
+        </main>
+    </div>
+    @@include('html/_footer.htm',{})
+    @@include('html/_modal.htm',{})
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</div>
+  </body>
+</html>

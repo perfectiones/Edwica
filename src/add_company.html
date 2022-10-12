@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Добавить компанию" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="container max">
+            @@include('html/_stepscr.htm',{})
+            <div class="form__wrapper stage-1">
+                <div class="col-12 form__title">О компании</div>
+                <div class=" upload__logo-1">
+                    <div class="download__logo ulpoad-1"> 
+                        <label for="withLogo">
+                            Лого с названием
+                            <span id="logo-named"></span>
+                        
+                            <div class="button__download">Загрузить</div>
+                            <input type="file" name="" id="withLogo" class="input__file" accept=".jpg, .png" >
+                        </label>
+                    </div>
+                    <div class="download__logo ulpoad-2">
+                        <label for="noLogo">
+                            Лого с названием
+                            <span id="logo_name"></span>
+                            <div class="button__download">Загрузить</div>
+                            <input type="file" name="" id="noLogo" class="input__file" accept=".jpg, .png">
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="download__cover">
+                    <label for="cover">
+                        Загрузите обложку курса или приветственное видео
+                        рекоммендуемое разрешение 1074x280<br>
+                        <span id="upload-cover">  </span> <br>
+                        <div class="button__download">Загрузить</div>
+                        <input type="file" id="cover" class="input__file" accept=".jpg, .png">
+                    </label>
+                </div>
+                </div>
+                <div>
+                    <label for="companyType" class="input__title">Тип компании</label><br>
+                    <input type="text" id="companyType" class="ownForm inputText">
+                </div>
+                    <div>
+                        <label for="companyFullName" class="input__title">Полное наименоание компании</label><br>
+                        <input type="text" id="companyFullName" class="inputText" >
+                    </div>
+                    <div>
+                        <label for="companyMinName" class="input__title">Сокращенное наименование компании</label><br>
+                        <input type="text" id="companyMinName"  class="inputText">
+                    </div>
+                    <div>
+                        <label for="companyName" class="input__title">Наименование вашего сайта</label><br>
+                        <input type="text" id="companyName"  class="inputText">
+                    </div>
+                    <div>
+                        <label for="companyInfo" class="input__title">Подробно о компании</label><br>
+                        <textarea id="companyInfo"  class="companyInfo inputText" style="min-height:90px ;"></textarea>
+                    </div>
+                    <div>
+                        <label for="companyTarget" class="input__title">Цель компании</label><br>
+                        <input type="text" id="companyTarget"  class="inputText">
+                    </div>
+                    <div>
+                        <label for="form__radio" class="radio__title">У вас есть образовательная лицензия?</label><br>
+                        <div style="margin-top:16px;" class="flex-c-a radio-button">
+                            <div class="form_radio">
+                                <input id="radio-1" type="radio" name="radio" value="1">
+                                <label for="radio-1">Да</label>
+                            </div>
+                            <div class="form_radio">
+                                <input id="radio-2" type="radio" name="radio" value="2" checked>
+                                <label for="radio-2">Нет</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education" id="block2">
+                        <div>
+                            <label for="educat_doc" class="input__title">Образовательная лицензия</label><br>
+                            <input type="text" id="educat_doc" class="education__input">
+                        </div>
+                        <div>
+                            <label for="educat_href" class="input__title">Ссылка на документ</label><br>
+                            <input type="text" id="educat_href" class="education__input">
+                        </div>
+                    </div>
+                    <div class="form__title company_history" style="margin-top:43px ;">
+                        История компании
+                    </div>
+                    <div>
+                        <button class="history__button">Добавить веху</button>
+                    </div>
+                    <div class="stages__nav">
+                        <div>
+                            <a href="#way"><button class="nextStage" id="stage-1_next">Следующий этап</button></a>
+                        </div>
+                    </div>
+                    <div class="MobileStages__nav">
+                        <div>
+                            <a href="#way"><button class="nextStage mob2" style="margin-left:0;" id="stage-1_next">Далее</button></a>
+                        </div>
+                    </div>
+            </div>
+            <div class="form__wrapper stage-1_2 hide" id="stage-1_2">
+                <div class="col-12 section__title">О компании</div>
+                <div class="upload__logo-2">
+                        <div class="download__logo logo_2">
+                            <label for="inputfile1">
+                                Загрузите лого
+                                <span class="download__subtitle" id="logo-2_name"></span>
+                                <div class="button__download">Загрузить</div>
+                                <input type="file" class="input__file" id="inputfile1" accept=".jpg, .png">
+                            </label>
+                        </div>
+                        <div class="download__cover cover_2">
+                            <label for="inputfile1">
+                                Загрузите обложку курса или приветственное видео
+                                рекоммендуемое разрешение 1074x280
+                                <span class="download__subtitle" id="cover-2_name"></span>
+                                <div class="button__download">Загрузить</div>
+                                <input type="file" class="input__file" id="inputfile2">
+                            </label>
+                        </div>
+                </div>
+                <div>
+                    <label for="inputText" class="input__title">Название организации (юр.лицо)</label><br>
+                    <input type="text" id="inputText" class="inputText">
+                </div>
+                <div>
+                    <label for="inputText" class="input__title">Название сервиса</label><br>
+                    <input type="text" id="inputText" class="inputText">
+                </div>
+                <div>
+                    <label for="inputText" class="input__title">Ссылка на сайт</label><br>
+                    <input type="text" id="inputText" class="inputText">
+                </div>
+                <div>
+                    <label for="inputText" class="input__title">Подробно о компании</label><br>
+                    <textarea id="inputText" class="companyInfo inputText" style="min-height:92px;"></textarea>
+                </div>
+                <div>
+                    <label for="inputText" class="input__title">Цель компании</label><br>
+                    <input type="text" id="inputText" class="inputText">
+                </div>
+                <div>
+                    <label for="form__radio" class="radio__title">У вас есть образовательная лицензия?</label><br>
+                    <div style="margin-top:16px;" class="flex-c-a radio-button">
+                        <div class="form_radio">
+                            <input id="radio-1" type="radio" name="radio" value="1">
+                            <label for="radio-1">Да</label>
+                        </div>
+                        <div class="form_radio">
+                            <input id="radio-2" type="radio" name="radio" value="2" checked>
+                            <label for="radio-2">Нет</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <div>
+                        <label for="educat_doc" class="input__title">Образовательная лицензия</label><br>
+                        <input type="text" id="educat_doc" class="education__input">
+                    </div>
+                    <div>
+                        <label for="educat_href" class="input__title">Ссылка на документ</label><br>
+                        <input type="text" id="educat_href" class="education__input">
+                    </div>
+                </div>
+                <div class="section__title company_history">
+                    История компании
+                </div>
+                <div class="company__list">
+                    <div class="list__items">
+                        <div>
+                            <div class="circle">1</div>
+                            <div class="data">
+                                <p>март 2022</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item__delete">
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                        <div class="info">
+                            <p>Здесь есть все для вашего удобства: записи занятий, домашние задания, разборы,<br> дополнительные варианты</p>
+                        </div>
+                </div>
+                <div class="hide__button">
+                    <button class="history__button">Добавить веху</button>
+                </div>
+                <div class="company__list list__first">
+                    <div class="list__items">
+                        <div>
+                            <div class="circle">2</div>
+                            <div class="data">
+                                <p>март 2022</p> 
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                            <div class="item__delete">
+                                <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                      
+                            </div>
+                    </div>
+                            <div class="info">
+                                <p>Здесь есть все для вашего удобства: записи занятий, домашние задания, разборы,<br> дополнительные варианты</p>
+                            </div>
+                    </div>
+                <div>
+                    <button class="history__button">Добавить веху</button>
+                </div>
+                <div class="stages__nav">
+                    <a href="#way"><button class="nextStage" id="stage-1_2_next">Следующий этап</button></a>
+                </div>
+                <div class="MobileStages__nav">
+                    <div class="prevStage">
+                        <a href="#way"><button class="prevStage mob" id="stage-1_2_back">Назад</button></a>
+                    </div>
+                    <div class="">
+                        <a href="#way"><button class="nextStage mob2" id="stage-1_2_next">Далее</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form__wrapper stage-2 hide">
+                <div class="section__title" style="padding-top:27px ;"><p>Ключевые цифры компании</p></div>
+                    <div class="flex section__content" style="padding-top:60px ;">
+                        <div><button class="history__button">Добавить</button></div>
+                        <div class="section__text">Цифры – простой, понятный, измеримый и доказательный способ показать клиентам уровень вашего профессионализма. <span class="text__popup used"> Пример >></span></div>
+                    </div>
+                <div class="line">
+                </div>
+                    <div class="section__title"><p>Преимущества</p></div>
+                    <div class="flex section__content">
+                        <div><button class="history__button">Добавить</button></div>
+                        <div class="section__text">Четкий, понятный заголовок и краткое его описание позволит быстро донести до клиента основные ваши преимущества. <span class="text__popup used"> Пример >></span> </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="section__title " style="padding-top:27px ;"><p>Свободный блок</p></div>
+                    <div class="flex section__content">
+                        <div><button class="history__button">Добавить</button></div>
+                        <div class="section__text">Персонализируйте страницу с информацией о вашей компанией! Сделайте ее отличной от других страниц ваших конкурентов, расскажите о большем количестве преимуществ в том формате, который будет понятен именно вашим клиентам!</div>
+                    </div>
+                    <div class="stages__nav">
+                        <div class="prevStage">
+                            <a href="#way"><button class="prevStage" id="stage-2_back">Предыдущий этап</button></a>
+                        </div>
+                        <div class="">
+                           <a href="#way"><button class="nextStage" id="stage-2_next">Следующий этап</button></a>
+                        </div>
+                    </div>
+                    <div class="MobileStages__nav">
+                        <div class="prevStage">
+                            <a href="#way"><button class="prevStage mob" id="stage-2_back">Назад</button></a>
+                        </div>
+                        <div class="">
+                            <a href="#way"><button class="nextStage mob2" id="stage-2_next">Далее</button></a>
+                        </div>
+                    </div>
+            </div>
+            <div class="form__wrapper stage-2_1 hide">
+                <div class="section__title" style="padding-top:61px;">
+                        Ключевые цифры компании
+                        <span class="title__svg used">
+                            <svg width="17" height="16" viewBox="0 0 17 16" data-bs-target="#Modal_keyNumbers" data-bs-toggle="modal" fill="none" xmlns="http://www.w3.org/2000/svg" data-popup>
+                                <path d="M7.7064 9.22191C7.7064 8.91791 7.7864 8.64591 7.9464 8.40591C8.1064 8.15791 8.3664 7.88191 8.7264 7.57791C9.0144 7.32991 9.2384 7.11391 9.3984 6.92991C9.5664 6.74591 9.6504 6.52991 9.6504 6.28191C9.6504 5.97791 9.5504 5.73391 9.3504 5.54991C9.1584 5.35791 8.8744 5.26191 8.4984 5.26191C8.1544 5.26191 7.8744 5.35791 7.6584 5.54991C7.4504 5.73391 7.3464 5.99791 7.3464 6.34191H5.7384C5.7384 6.01391 5.8064 5.70591 5.9424 5.41791C6.0864 5.12191 6.2784 4.86191 6.5184 4.63791C6.7664 4.41391 7.0584 4.23791 7.3944 4.10991C7.7304 3.98191 8.0984 3.91791 8.4984 3.91791C8.9304 3.91791 9.3144 3.97791 9.6504 4.09791C9.9944 4.20991 10.2864 4.36991 10.5264 4.57791C10.7664 4.78591 10.9464 5.02991 11.0664 5.30991C11.1944 5.58991 11.2584 5.89391 11.2584 6.22191C11.2584 6.43791 11.2384 6.63391 11.1984 6.80991C11.1584 6.98591 11.0904 7.15391 10.9944 7.31391C10.9064 7.47391 10.7864 7.63791 10.6344 7.80591C10.4824 7.96591 10.2984 8.14191 10.0824 8.33391C9.8984 8.49391 9.7544 8.62991 9.6504 8.74191C9.5464 8.84591 9.4664 8.94191 9.4104 9.02991C9.3624 9.10991 9.3304 9.18591 9.3144 9.25791C9.2984 9.32191 9.2904 9.38991 9.2904 9.46191V9.70191H7.7064V9.22191ZM8.4984 12.6059C8.2184 12.6059 7.9784 12.5059 7.7784 12.3059C7.5784 12.1059 7.4784 11.8659 7.4784 11.5859C7.4784 11.2899 7.5784 11.0459 7.7784 10.8539C7.9784 10.6619 8.2184 10.5659 8.4984 10.5659C8.7784 10.5659 9.0184 10.6619 9.2184 10.8539C9.4184 11.0459 9.5184 11.2899 9.5184 11.5859C9.5184 11.8659 9.4184 12.1059 9.2184 12.3059C9.0184 12.5059 8.7784 12.6059 8.4984 12.6059Z" fill="#D0C2DE"/>
+                                <path d="M16.5 8C16.5 12.114 12.9473 15.5 8.5 15.5C4.05273 15.5 0.5 12.114 0.5 8C0.5 3.88599 4.05273 0.5 8.5 0.5C12.9473 0.5 16.5 3.88599 16.5 8Z" stroke="#D0C2DE"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="company__list">
+                        <div class="list__items">
+                            <div>
+                                <div class="circle">1</div>
+                                <div class="data">
+                                    <p>963 926</p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__delete">
+                                <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                            <div class="info">
+                                <p>студентов получили востребованные профессии и успешно строят карьеру</p>
+                            </div>
+                    </div>
+                    <div class="hide__button">
+                        <button class="history__button">Добавить веху</button>
+                    </div>
+                    <div class="company__list">
+                        <div class="list__items">
+                            <div>
+                                <div class="circle">2</div>
+                                <div class="data">
+                                    <p>50+</p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__delete">
+                                <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                            <div class="info">
+                                <p>студентов получили востребованные профессии и успешно строят карьеру</p>
+                            </div>
+                    </div>
+                    <div class="hide__button">
+                        <button class="history__button">Добавить веху</button>
+                    </div>
+                    <div class="off">
+                        <button class="button__add">Добавить</button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="section__title" style="padding-top:61px;">
+                        Преимущества
+                        <span class="title__svg used">
+                            <svg width="17" height="16" viewBox="0 0 17 16" data-bs-target="#Modal__adventages" data-bs-toggle="modal" fill="none" xmlns="http://www.w3.org/2000/svg" data-popup>
+                                <path d="M7.7064 9.22191C7.7064 8.91791 7.7864 8.64591 7.9464 8.40591C8.1064 8.15791 8.3664 7.88191 8.7264 7.57791C9.0144 7.32991 9.2384 7.11391 9.3984 6.92991C9.5664 6.74591 9.6504 6.52991 9.6504 6.28191C9.6504 5.97791 9.5504 5.73391 9.3504 5.54991C9.1584 5.35791 8.8744 5.26191 8.4984 5.26191C8.1544 5.26191 7.8744 5.35791 7.6584 5.54991C7.4504 5.73391 7.3464 5.99791 7.3464 6.34191H5.7384C5.7384 6.01391 5.8064 5.70591 5.9424 5.41791C6.0864 5.12191 6.2784 4.86191 6.5184 4.63791C6.7664 4.41391 7.0584 4.23791 7.3944 4.10991C7.7304 3.98191 8.0984 3.91791 8.4984 3.91791C8.9304 3.91791 9.3144 3.97791 9.6504 4.09791C9.9944 4.20991 10.2864 4.36991 10.5264 4.57791C10.7664 4.78591 10.9464 5.02991 11.0664 5.30991C11.1944 5.58991 11.2584 5.89391 11.2584 6.22191C11.2584 6.43791 11.2384 6.63391 11.1984 6.80991C11.1584 6.98591 11.0904 7.15391 10.9944 7.31391C10.9064 7.47391 10.7864 7.63791 10.6344 7.80591C10.4824 7.96591 10.2984 8.14191 10.0824 8.33391C9.8984 8.49391 9.7544 8.62991 9.6504 8.74191C9.5464 8.84591 9.4664 8.94191 9.4104 9.02991C9.3624 9.10991 9.3304 9.18591 9.3144 9.25791C9.2984 9.32191 9.2904 9.38991 9.2904 9.46191V9.70191H7.7064V9.22191ZM8.4984 12.6059C8.2184 12.6059 7.9784 12.5059 7.7784 12.3059C7.5784 12.1059 7.4784 11.8659 7.4784 11.5859C7.4784 11.2899 7.5784 11.0459 7.7784 10.8539C7.9784 10.6619 8.2184 10.5659 8.4984 10.5659C8.7784 10.5659 9.0184 10.6619 9.2184 10.8539C9.4184 11.0459 9.5184 11.2899 9.5184 11.5859C9.5184 11.8659 9.4184 12.1059 9.2184 12.3059C9.0184 12.5059 8.7784 12.6059 8.4984 12.6059Z" fill="#D0C2DE"/>
+                                <path d="M16.5 8C16.5 12.114 12.9473 15.5 8.5 15.5C4.05273 15.5 0.5 12.114 0.5 8C0.5 3.88599 4.05273 0.5 8.5 0.5C12.9473 0.5 16.5 3.88599 16.5 8Z" stroke="#D0C2DE"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="company__list">
+                        <div class="list__items">
+                            <div>
+                                <div class="circle">1</div>
+                                <div class="data">
+                                    <p>Принцип от простого к сложному</p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__delete">
+                                <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                            <div class="info">
+                                <p>студентов получили востребованные профессии и успешно строят карьеру</p>
+                            </div>
+                    </div>
+                    <div class="hide__button">
+                        <button class="history__button">Добавить веху</button>
+                    </div>
+                    <div class="company__list">
+                        <div class="list__items">
+                            <div>
+                                <div class="circle">2</div>
+                                <div class="data">
+                                    <p>50+</p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="item__delete">
+                                <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                            <div class="info">
+                                <p>студентов получили востребованные профессии и успешно строят карьеру</p>
+                            </div>
+                    </div>
+                    <div class="hide__button">
+                        <button class="history__button">Добавить веху</button>
+                    </div>
+                    <div class="off">
+                        <button class="button__add">Добавить</button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="section__title"><p>Свободный блок</p></div>
+                    <div class="flex section__content">
+                        <div>
+                            <button class="history__button off" data-bs-target="#chooseBlock" data-bs-toggle="modal">Добавить</button>
+                        </div>
+                        <div class="section__text">Персонализируйте страницу с информацией о вашей компанией! Сделайте ее отличной от других страниц ваших конкурентов, расскажите о большем количестве преимуществ в том формате, который будет понятен именно вашим клиентам!
+                        </div>
+                    </div>
+                    <div class="hide__button">
+                            <button class="history__button" data-bs-target="#chooseBlock" data-bs-toggle="modal">Добавить веху</button>
+                    </div>
+                    <div class="stages__nav">
+                        <div class="prevStage">
+                            <a href="#way"><button class="prevStage" id="stage-2_1_back">Предыдущий этап</button></>
+                        </div>
+                        <div class="">
+                            <a href="#way"><button class="nextStage" id="stage-2_1_next">Следующий этап</button></a>
+                        </div>
+                    </div>
+                    <div class="MobileStages__nav">
+                        <div class="prevStage">
+                            <a href="#way"><button class="prevStage mob"  id="stage-2_1_back">Назад</button></a>
+                        </div>
+                        <div class="">
+                            <a href="way"><button class="nextStage mob2"  id="stage-2_1_next">Далее</button></a>
+                        </div>
+                    </div>
+            </div>
+            <div class="form__wrapper stage-2_2 hide">
+            <div class="section__title" style="padding-top:61px;">
+                    Ключевые цифры компании
+                </div>
+                <div class="line" style="margin-top: 0; margin-bottom: 50px;"></div>
+                <div class="company__list">
+                    <div class="list__items">
+                        <div>
+                            <div class="circle">1</div>
+                            <div class="data">
+                                <p>963 926</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item__delete">
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                        <div class="info">
+                            <p>студентов получили востребованные профессии и успешно строят карьеру</p>
+                        </div>
+                </div>
+                <div class="hide__button">
+                    <button class="history__button">Добавить веху</button>
+                </div>
+                <div class="company__list">
+                    <div class="list__items">
+                        <div>
+                            <div class="circle">2</div>
+                            <div class="data">
+                                <p>50+</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item__delete">
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                        <div class="info">
+                            <p>студентов получили востребованные профессии и успешно строят карьеру</p>
+                        </div>
+                </div>
+                <div class="hide__button">
+                    <button class="history__button">Добавить веху</button>
+                </div>
+                <div class="off">
+                    <button class="button__add">Добавить</button>
+                </div>
+                <div class="line"></div>
+                <div class="section__title" style="padding-top:61px;">
+                    Преимущества
+                    
+                </div>
+                <div class="company__list">
+                    <div class="list__items">
+                        <div>
+                            <div class="circle">1</div>
+                            <div class="data">
+                                <p>Принцип от простого к сложному</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item__delete">
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                        <div class="info">
+                            <p>студентов получили востребованные профессии и успешно строят карьеру</p>
+                        </div>
+                </div>
+                <div class="hide__button">
+                    <button class="history__button">Добавить веху</button>
+                </div>
+                <div class="company__list">
+                    <div class="list__items">
+                        <div>
+                            <div class="circle">2</div>
+                            <div class="data">
+                                <p>50+</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item__delete">
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                        <div class="info">
+                            <p>студентов получили востребованные профессии и успешно строят карьеру</p>
+                        </div>
+                </div>
+                <div class="hide__button">
+                    <button class="history__button">Добавить веху</button>
+                </div>
+            
+                <div class="col-12 justify-content-start off">
+                    <button class="button__add">Добавить</button>
+                </div>
+                <div class="line"></div>
+                <div class="section__title"><p>Свободный блок</p></div>
+                <div class="company__list">
+                    <div class="list__items">
+                        <div>
+                            <div class="circle">1</div>
+                            <div class="data">
+                                <p>50+</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item__delete">
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                        <div class="info">
+                            <p>студентов получили востребованные профессии и успешно строят карьеру</p>
+                        </div>
+                        <div class="ulpoad">
+                            <label for="info__ulpoad">
+                                <button class="button__add" style="margin-left: 0; margin-right: 0;">Загрузить файл</button>
+                            </label>
+                            <input type="file" name="" id="info__ulpoad">
+                        </div>
+                </div>
+                <div class="col-12 justify-content-start off" style="margin-bottom: 48px;">
+                    <button class="button__add">Добавить</button>
+                </div>
+                <div class="stages__nav">
+                    <div class="prevStage">
+                        <a href="#way"><button class="prevStage" id="stage-2_2_back">Предыдущий этап</button></a>
+                    </div>
+                    <div class="">
+                        <a href="#way"><button class="nextStage" id="stage-2_2_next">Следующий этап</button></a>
+                    </div>
+                </div>
+                <div class="MobileStages__nav">
+                    <div class="prevStage">
+                        <a href="#way"><button class="prevStage mob" id="stage-2_2_back">Назад</button></a>
+                    </div>
+                    <div class="">
+                        <a href="#way"><button class="nextStage mob2" id="stage-2_2_next">Далее</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form__wrapper stage-3 hide">
+                <div class="col-12 section__title">Данные компании (для студентов)</div>
+                <div>
+                    <label for="companyType first" class="input__title">Телефон (для студентов)</label><br>
+                    <input type="text" id="companyType" class="ownForm inputText" >
+                </div>
+                <div>
+                    <label for="companyType first" class="input__title">Email (для студентов)</label><br>
+                    <input type="text" id="companyType" class="ownForm inputText" >
+                </div>
+                <div class="stages__nav" style="margin-top:60px;">
+                    <div class="prevStage">
+                        <a href="#way"><button class="prevStage" id="stage-3_back">Предыдущий этап</button></a>
+                    </div>
+                    <div class="">
+                        <a href="#way"><button class="nextStage" id="stage-3_next">Следующий этап</button></a>
+                    </div>
+                </div>
+                <div class="MobileStages__nav" style="margin-top:46px;">
+                    <div class="prevStage">
+                        <a href="#way"><button class="prevStage mob" id="stage-3_back">Назад</button></a>
+                    </div>
+                    <div class="">
+                        <a href="#way"><button class="nextStage mob2" id="stage-3_next">Далее</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form__wrapper stage-4 hide">
+            <div class="col-12 section__title">Данные компании</div>
+            <div>
+                <label for="companyType first" class="input__title">ИНН</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div>
+                <label for="companyType first" class="input__title">КПП</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div>
+                <label for="companyType first" class="input__title">Юридический адрес</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div>
+                <label for="companyType first" class="input__title">Почтовый адрес</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div class="line" style="margin: 27px -15px 19px -49px;">
+            </div>
+            <div class="col-12 section__title">Платежные данные</div>
+            <div>
+                <label for="companyType first" class="input__title">Валюта вашего банка</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div>
+                <label for="companyType first" class="input__title">Владелец счета</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div>
+                <label for="companyType first" class="input__title">Расчетный счет</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div class="line"></div>
+            <div class="col-12 section__title">Данные банка</div>
+            <div>
+                <label for="companyType first" class="input__title">Полгое наименование банка</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div>
+                <label for="companyType first" class="input__title">Юридический адрес обслуживающего отделения</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div>
+                <label for="companyType first" class="input__title">БИК</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div>
+                <label for="companyType first" class="input__title">Кореспонденский счет</label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div>
+                <label for="companyType first" class="input__title">Комментарий (в том случае, если вам не хватило полей или какие то поля по какой то причине вам не подходят, то наишите недостающую информацию в комментации) </label><br>
+                <input type="text" id="companyType" class="ownForm inputText" >
+            </div>
+            <div class="stages__nav" style="margin-top:60px;">
+                <div class="prevStage">
+                    <a href="#way"><button class="prevStage" id="stage-4_back">Предыдущий этап</button></a>
+                </div>
+                <div class="">
+                    <a href="#way"><button class="nextStage" id="stage-4_next">Следующий этап</button></a>
+                </div>
+            </div>
+            <div class="MobileStages__nav" style="margin-top:46px;">
+                <div class="prevStage">
+                    <a href="#way"><button class="prevStage mob" id="stage-4_back">Назад</button></a>
+                </div>
+                <div class="">
+                    <a href="#way"><button class="nextStage mob2" id="stage-4_next">Далее</button></a>
+                </div>
+            </div>
+            </div>
+            <div class="form__wrapper stage-5 hide">
+                <div class="col-12 section__title">Истории успеха</div>
+                <div class="company__list">
+                    <div class="list__items">
+                        <div>
+                            <div class="circle">1</div>
+                            <div class="data">
+                                <p>ФИО</p>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 4L5 4C3.89543 4 3 4.89543 3 6L3 20C3 21.1046 3.89543 22 5 22L19 22C20.1046 22 21 21.1046 21 20L21 6C21 4.89543 20.1046 4 19 4Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2V6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2L8 6" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 10L21 10" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="item__delete">
+                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                        <div class="info" style="margin-bottom:23px ;">
+                            <p>Истории успеха</p>
+                        </div>
+                        <div class="file-upload upload-3">
+                            <label>
+                                <div class="file-upload__contact">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V17C0 17.7956 0.316071 18.5587 0.87868 19.1213C1.44129 19.6839 2.20435 20 3 20H17C17.1645 19.9977 17.3284 19.981 17.49 19.95L17.79 19.88H17.86H17.91L18.28 19.74L18.41 19.67C18.51 19.61 18.62 19.56 18.72 19.49C18.8535 19.3918 18.9805 19.2849 19.1 19.17L19.17 19.08C19.2682 18.9805 19.3585 18.8735 19.44 18.76L19.53 18.63C19.5998 18.5187 19.6601 18.4016 19.71 18.28C19.7374 18.232 19.7609 18.1818 19.78 18.13C19.83 18.01 19.86 17.88 19.9 17.75V17.6C19.9567 17.4046 19.9903 17.2032 20 17V3C20 2.20435 19.6839 1.44129 19.1213 0.87868C18.5587 0.316071 17.7956 0 17 0ZM3 18C2.73478 18 2.48043 17.8946 2.29289 17.7071C2.10536 17.5196 2 17.2652 2 17V12.69L5.29 9.39C5.38296 9.29627 5.49356 9.22188 5.61542 9.17111C5.73728 9.12034 5.86799 9.0942 6 9.0942C6.13201 9.0942 6.26272 9.12034 6.38458 9.17111C6.50644 9.22188 6.61704 9.29627 6.71 9.39L15.31 18H3ZM18 17C17.9991 17.1233 17.9753 17.2453 17.93 17.36C17.9071 17.4087 17.8804 17.4556 17.85 17.5C17.8232 17.5423 17.7931 17.5825 17.76 17.62L12.41 12.27L13.29 11.39C13.383 11.2963 13.4936 11.2219 13.6154 11.1711C13.7373 11.1203 13.868 11.0942 14 11.0942C14.132 11.0942 14.2627 11.1203 14.3846 11.1711C14.5064 11.2219 14.617 11.2963 14.71 11.39L18 14.69V17ZM18 11.86L16.12 10C15.5477 9.45699 14.7889 9.15428 14 9.15428C13.2111 9.15428 12.4523 9.45699 11.88 10L11 10.88L8.12 8C7.54772 7.45699 6.7889 7.15428 6 7.15428C5.2111 7.15428 4.45228 7.45699 3.88 8L2 9.86V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H17C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3V11.86Z" fill="#D0C2DE"/>
+                                    </svg>
+                                    <input type="file" name="file" style="display:none ;">
+                                    <span id="filename" class="file-upload__name used"> Прикрепить файл</span>
+                                    <div class="file-upload__cancel used"></div>
+                                </div>
+                                <div class="file-upload__button used"><p>Загрузить файл</p></div>
+                            </label>
+                        </div>
+                        <div class="company-list__button">Добавить пукт</div>
+                </div>
+                <div class="line"></div>
+                <div class="col-12 section__title" style="padding-top: 0px;">Преподаватели</div>
+                <div class="teachers">
+                    <div class="teachers__form">
+                        <div class="form__info">
+                        <div class="photo"></div>
+                        <div class="name"><p>Иванов Иван Иванович</p></div>
+                        <div class="experience"><p>Стаж 5 лет</p></div>
+                        </div>
+                        <div class="form__buttons">
+                            <button >Редактировать</button>
+                           <div>
+                                <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="teachers__add">
+                        <div>
+                            <div class="button used" data-bs-target="#addTeacher" data-bs-toggle="modal"></div>
+                            <div class="text">Добавить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="col-12 section__title">Основатели</div>
+                <div class="teachers">
+                    <div class="teachers__form">
+                        <div class="form__info">
+                        <div class="photo"></div>
+                        <div class="name"><p>Иванов Иван Иванович</p></div>
+                        <div class="experience"><p>Стаж 5 лет</p></div>
+                        </div>
+                        <div class="form__buttons">
+                            <button >Редактировать</button>
+                           <div>
+                                <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="teachers__add">
+                        <div>
+                            <div class="button used" data-bs-target="#addTeacher" data-bs-toggle="modal"></div>
+                            <div class="text">Добавить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stages__nav" style="margin-top:48px;">
+                    <div class="prevStage">
+                        <a href="#way"><button class="prevStage" id="stage-5_back">Предыдущий этап</button></a>
+                    </div>
+                    <div>
+                        <a href="#way"><button class="nextStage" id="stage-5_next">Следующий этап</button></a>
+                    </div>
+                </div>
+                <div class="MobileStages__nav">
+                    <div class="prevStage">
+                        <a href="#way"><button class="prevStage mob" id="stage-5_back">Назад</button></a>
+                    </div>
+                    <div>
+                        <a href="#way"><button class="nextStage mob2"  id="stage-5_next">Далее</button></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    @@include('html/_footer.htm',{})
+    @@include('html/_modal.htm',{})
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</div>
+  </body>
+</html>

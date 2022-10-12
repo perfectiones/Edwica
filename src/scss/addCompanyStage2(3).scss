@@ -1,0 +1,15 @@
+.list__download{
+    display: flex;
+    flex-direction: column;
+    .download__button{
+        color: $colorSt;
+
+        width: 160px;
+        padding: 8px 0;
+
+        background: #F9F4FF;
+
+        border: 1px solid #E6E0FA;
+        border-radius: 8px;
+    }
+}

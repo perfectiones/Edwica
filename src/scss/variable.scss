@@ -1,0 +1,14 @@
+$colorSt:#966CEE; // Основной цвет стиля 
+$colorBord:#EFE8F8; // Цвет границы форм
+$colorT_F:#A897BD;
+
+textarea:focus, input:focus{
+    outline: none;
+    }
+    
+    textarea {
+        padding: 10px 16px 0;
+        resize:none;
+        overflow: auto;
+    }
+

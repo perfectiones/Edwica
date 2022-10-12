@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Добавить компанию" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="container max">
+            @@include('html/_stepscr.htm',{})
+               <div class="form__wrapper">
+                    <div class="col-12 section__title">Данные компании (для студентов)</div>
+                    <div>
+                        <label for="companyType first" class="input__title">Телефон (для студентов)</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div>
+                        <label for="companyType first" class="input__title">Email (для студентов)</label><br>
+                        <input type="text" id="companyType" class="ownForm inputText" >
+                    </div>
+                    <div class="stages__nav" style="margin-top:60px;">
+                        <div class="prevStage">
+                            <a href="add_compStage2(3).html"><button class="prevStage">Предыдущий этап</button></a>
+                        </div>
+                        <div class="">
+                            <a href="add__compStage4.html"><button class="nextStage">Следующий этап</button></a>
+                        </div>
+                    </div>
+                    <div class="MobileStages__nav" style="margin-top:46px;">
+                        <div class="prevStage">
+                            <a href="add__compStage2(3).html"><button class="prevStage mob">Назад</button></a>
+                        </div>
+                        <div class="">
+                            <a href="add__compStage4.html"><button class="nextStage mob2">Далее</button></a>
+                        </div>
+                    </div>
+               </div>
+        </main>
+    </div>
+    @@include('html/_footer.htm',{})
+    @@include('html/_modal.htm',{})
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</div>
+  </body>
+</html>

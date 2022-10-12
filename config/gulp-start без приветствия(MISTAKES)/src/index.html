@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main>
+        
+        <div class="page container">
+            <div class="page__sidebar" id="sidebar">
+                <div class="sidebar__items">
+                  <a href=""><div class="item" style="padding-top:26px ;"><li>Главная</li></div></a>
+                  <a href=""><div class="item"><li>Компании</li></div></a>
+                  <a href=""><div class="item"><li>Преподователи</li></div></a>
+                  <a href=""><div class="item"><li>Курсы</li></div></a>
+                  <a href=""><div class="item"><li>Вебинары</li></div></a>
+                  <a href=""><div class="item"><li>Профессии</li></div></a>
+                  <a href=""><div class="item"><li>Купоны</li></div></a>
+                  <a href=""><div class="item"><li>Финансы</li></div></a>
+                  <a href=""><div class="item"><li>Чат</li></div></a>
+                  <a href=""><div class="item"><li>Пользователи</li></div></a>
+                  <a href=""><div class="item"><li>Настройки</li></div></a>
+                </div>
+            </div>
+            <div class="page__content">
+              <div class="filtr">
+                <div class="filtr__title">
+                  Компании <span>(345)</span>
+                </div>
+                <div class="filtr__search">
+                    <label class="input__title" for="search" >Поиск</label>
+                    <div class="block__search">
+                      <input type="search" id="search" class="input__search">
+                        <svg class="search__icon used" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.8068 11.8288L17 17M13.6738 7.33692C13.6738 10.8367 10.8367 13.6738 7.33692 13.6738C3.83714 13.6738 1 10.8367 1 7.33692C1 3.83713 3.83714 1 7.33692 1C10.8367 1 13.6738 3.83713 13.6738 7.33692Z" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-8 filtr__select">
+                    <div class="row">
+                      <div class="col-6">
+                        <label for="selectType" class="input__title">Тип</label><br>
+                        <div class="select__wrapper" id="select__wrapper">
+                          <select id="selectType" class="input__select" > 
+                            <option value=""><span class="select__text"> Не выбрано</span></option>
+                            <option value=""><span class="select__text">Выбрано</span></option>
+                            <option value=""><span class="select__text">Иди отсюда</span></option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <label for="selectPlace" class="input__title">Где продается</label><br>
+                       <div class="select__wrapper" id="select__wrapper">
+                          <select id="selectPlace" class="input__select">
+                            <option value=""><span class="select__text">У нас</span></option>
+                            <option value=""><span class="select__text">У вас</span></option>
+                            <option value=""><span class="select__text">Пока</span></option>
+                          </select>
+                       </div>
+                      </div>
+                    </div class="row">
+                  </div>
+                  <div class="col-4 filtr__button">
+                    <div class="col-lg-7 col-sm-7 filtr__buttonHELP">
+                      <button class="button__use"><span class="button__text">Применить</span></button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="container centr">
+                  <div class="row company__buttn flex-s_b">
+                    <div class=" col-6 col-lg-4 col-xl-4">
+                      <a href="add_company.html"><div class="col-lg-8 col-sm-7 col-xs-12"><button class="button__addComp"><span class="button__text">Добавить вручную</span></button></div></a>
+                    </div>
+                    <div class="col-6 col-lg-4 col-xl-4" style="position:relative;">
+                      <div class="col-lg-8 col-sm-7 col-xs-12 right" >
+                      <button class="button__hideFiltr" >
+                          <span class="button__text">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6L20 6" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M8 4V8" stroke="#966CEE" stroke-width="2" stroke-linecap="round"/>
+                              <path d="M16 10V14" stroke="#966CEE" stroke-width="2" stroke-linecap="round"/>
+                              <path d="M8 16V20" stroke="#966CEE" stroke-width="2" stroke-linecap="round"/>
+                              <path d="M4 12L20 12" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M4 18L20 18" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg><!--Решить ПРОБЛЕМУ С ВСТАВКОЙ КАРТИНОК-->
+                            Скрыть фильтры
+                          </span></button>
+                        </div>
+                    </div>
+                  </div>
+                  <section id="companyList">
+                  <div class="row search__result">
+                      <div class="GeekBrain">
+                        <div class="Geek__logo flex-c">
+                        <div class="logo__place"></div>
+                        </div>
+                        <div class="Geek__text">
+                          <div class="title">GeekBrains</div>
+                          <div class="subtitle">ООО “Гикбрэинс”</div>
+                        </div>
+                        <div class=" flex-c">
+                          <button class="button__edit" id="button__edit">Редактировать</button>
+                        </div>
+                        <div class=" flex-c">
+                          <button class="button__hide">Скрыть</button>
+                        </div>
+                      <div class="Geek__svg flex-c">
+                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001" stroke="#EF3D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                  </div>
+                </section>
+                </div>
+              </div>
+              </div>
+                
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

@@ -1,0 +1,621 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+
+.form__title{
+    font-style: normal;
+    font-weight: 400;
+    @include adaptive-font(28,19);
+    line-height: 36px;
+
+    margin-bottom: 32px;
+}
+
+.radio__title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 25px;
+    color: #A897BD;
+
+    
+}
+.form-check-label{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-left: 16px;
+    
+}
+
+.yes{
+    margin-right: 48px;
+}
+//Заголовок для секций
+.section__title{
+    font-family: 'Golos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #392B4B;
+
+    padding-top: 48px;
+}
+
+//Заголовок для input
+.input__title{
+    font-family: 'Golos';
+    font-style: normal;
+    font-weight: 400;
+    @include adaptive-font(16, 13);
+    line-height: 24px;
+
+    padding-top: 32px;
+    padding-bottom: 8px;
+
+    color: #A897BD;
+}
+
+//Шрифт для текста внутри input
+.input__font{
+    font-family: 'Golos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #392B4B;
+}
+
+//Стиль колонки input:text 
+.input__text{
+    width: 864px;
+    height: 44px;
+
+    padding: 10px 16px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #EFE8F8;
+    border-radius: 8px;
+}
+
+
+.input__select{
+    appearance: none;
+    outline: none;
+
+    cursor: pointer;
+    .select__wrapper::after{
+        content: "";
+
+        position: absolute;
+
+
+        top: 50%;
+        right: 10%;
+
+        display: block;
+        width: 2px;
+        height: 7px;
+        background-color: #D0C2DE;
+    }
+}
+
+.input__search{
+    background: #FFFFFF;
+
+    border: 1px solid #EFE8F8;
+    border-radius: 8px;
+
+    height: 44px;
+    width: 100%;
+
+    padding-left: 16px;
+    
+}
+
+.select__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #615473;
+}
+//Стиль для кнопки загрузить
+.button__download{
+    color: $colorSt;
+    width: 120px;
+    height: 36px;
+
+    background: #F9F4FF;
+
+}
+
+//Стили для элемента, который будет как-то использоваться 
+.used{
+    cursor: pointer;
+}
+
+
+// Обнуление для input:file
+.input__file{
+    opacity: 0;
+    display: none;
+}
+
+
+.input__select{
+    appearance: none;
+    outline: none; 
+    border: none;
+    border: 1px solid #EFE8F8;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    
+    width: 261px;
+    height: 44px; 
+
+    line-height: 24px;
+    font-size: 16px;
+    color: #615473;
+
+    padding-left: 16px;
+    &::after{
+
+    }
+    &::before{
+
+    }
+}
+
+// Стили для блока загрузки со стороны пользователя
+.download__block{
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.rectangle{
+    display: flex;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}   
+
+//Текст внутри секции
+.section__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+
+}
+
+//Блок Company list
+
+.first{
+    margin-top: 23px;
+}
+.company__list{
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 12px;
+
+    background: #FBFAFD;
+
+    border: 1px solid #EFE8F8;
+    border-radius: 8px;
+
+    padding: 29px 27px 32px 36px;
+    .ulpoad{
+        display: flex;
+        flex-direction: column-reverse;
+        input{
+            display: none;
+        }
+    }
+    .company-list__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: $colorSt;
+
+        margin-top: 33px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 192px;
+        height: 44px;
+
+        background: #F9F4FF;
+
+        border: 1px solid #E6E0FA;
+        border-radius: 8px;
+    }
+    .list__items{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div{
+            display: flex;
+            align-items: center;
+            .circle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            
+
+                width: 44px;
+                height: 44px;
+
+                border-radius: 50%;
+
+                box-shadow: 0px 2px 8px rgba(24, 29, 54, 0.1);
+
+                color: #392B4B;
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+
+            }
+            .data{
+
+
+                width: 304px;
+                height: 44px;
+                margin-left: 35px;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                padding: 0 12px 0 18px;
+
+                background: #FFFFFF;
+
+                border: 1px solid #EFE8F8;
+                border-radius: 8px;
+
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                
+                color: #615473;
+            }
+        }
+
+       
+        .item__delete{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                cursor: pointer;
+            }
+        }
+    }
+    .info{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #392B4B;
+            
+        height: 69px;
+
+        border: 1px solid #EFE8F8;
+        border-radius: 8px;
+
+        margin: 27px auto 0;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        padding: 10px 74px 0 16px;
+
+        background-color: #FFFFFF;
+    }
+}
+
+.block__form{
+        margin-top: 21px;
+
+        background: #FFFFFF;
+
+        border: 1px solid #EFE8F8;
+        border-radius: 16px;
+
+        padding-left: 49px;
+        padding-right: 39px;
+
+}
+//Кнопка добавления
+.button__add{
+    
+    height: 44px;
+
+    background: #F9F4FF;
+
+    border: 1px solid #E6E0FA;
+    border-radius: 8px;
+
+    color: $colorSt;
+
+    margin-top: 28px;
+  
+}
+
+//Кнопка ПРИМЕНИТЬ
+.button__use{
+    width: 100%;
+
+    color: #FFFFFF;
+
+    border-radius: 8px;
+
+    padding: 10px 0 10px;
+
+    background-color: $colorSt;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.flex-s_b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-c-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-c-a{
+    display: flex;
+    align-items: center;
+}
+.flex-end{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.nextStage{
+    position: relative;
+
+    perspective-origin: center;
+    margin-left: 40px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 182px;
+    height: 44px;
+
+    color: #FFFFFF;
+
+    background: $colorSt;
+    border-radius: 8px;
+
+    transition-duration: 0.7s;
+
+}
+.nextStage-background{
+    position: absolute;
+    width: 182px;
+    height: 40px;
+
+    border-radius: 8px;
+
+    margin-left: 40px;
+    background-color: $colorSt;
+    opacity: 50%;
+}
+.nextStage:hover{
+    transform: translate3d(0, 10px, 0);    
+}
+
+.MobileStages__nav{
+    display: none;
+    justify-content: space-evenly;
+    @media (max-width:900px) {
+        display: flex !important;
+    }
+
+    .mob{
+    width: 128px;
+    height: 44px;
+    background: #F9F4FF;
+
+    border: 1px solid #E6E0FA;
+    border-radius: 8px;
+
+    }
+    
+    .mob2{
+        width: 128px;
+        height: 44px;
+
+    }
+    
+}
+
+
+.prevStage{
+    color: $colorSt;
+
+    font-weight: 600;
+    font-size: 16px;  
+    line-height: 24px;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 0.7s;
+}
+.prevStage:hover{
+    transform: translate3d(0, 10px, 0);  
+
+}
+
+.stages__nav{
+    display: flex;
+    justify-content: right;
+
+    padding-right: 24px;
+    @media (max-width:900px) {
+        display: none;
+    }
+}
+
+.active{
+    display: block;
+}
+.off{
+    display: block;
+    @media (max-width:900px) {
+        display: none;
+    }
+}
+
+
+.hide{
+    display: none; 
+}
+
+.file-upload{
+    label{
+       
+
+        .file-upload__contact{
+            display: flex;
+            
+            align-items: center;
+
+            .file-upload__name{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+
+                color: #392B4B;
+
+                margin-left: 10px;
+
+                width: 181px;
+                
+                text-align: center;
+            }
+            .file-upload__cancel{
+                position: relative;
+                
+                width: 24px;
+                height: 24px;
+
+                border-radius: 4px;
+
+                background-color: $colorSt;
+                
+                margin-left: 16px;
+
+            }
+            .file-upload__cancel::after{
+                position: absolute;
+                content: "";
+                
+                width: 12px;
+                height: 2px;
+
+                background-color: #FFFFFF;
+
+                transform: rotate(45deg);
+                
+                top: 45%;
+                right: 28%;
+
+                border-radius: 2px;
+            }
+            .file-upload__cancel::before{
+                position: absolute;
+                content: "";
+                width: 12px;
+                height: 2px;
+
+                border-radius: 2px;
+
+                background-color: #FFFFFF;
+
+                transform: rotate(-45deg);
+
+                top: 45%;
+                right: 28%;
+
+            }
+            
+        }
+        .file-upload__button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 160px;
+            height: 36px;   
+
+            background: #F9F4FF;
+
+            border: 1px solid #E6E0FA;
+            border-radius: 8px;
+
+            margin-top: 18px;
+
+            color: $colorSt;
+            
+            
+
+        }
+    }
+}
+
+
+@media (max-width:900px) {
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section__title{
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+        
+    }
+    .section__content{
+        padding-bottom: 0;
+    }
+    
+}
+

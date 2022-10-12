@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Добавить компанию" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+          <main class="container">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-10 col-12">
+                     <div class="companyAdd__nav">
+                      <div class="title">
+                        <p>Добавление компании</p>
+                      </div>
+                      <div class="button">
+                        <button class="button__title"> Отмена</button>
+                      </div>
+                     </div>
+                     <div class="companyAdd__way">
+                        <div class="step">
+                          <div class="step__circle">1</div>
+                          <div class="step__title">О компании</div>
+                        </div>
+                        <div class="flex-c">
+                          <span class="line"></span>
+                        </div>
+                        <div class="step">
+                          <div class="step__circle">2</div>
+                          <div class="step__title">Преимущества</div>
+                        </div>
+                        <div class="flex-c">
+                          <span class="line"></span>
+                        </div>
+                        <div class="step">
+                          <div class="step__circle">3</div>
+                          <div class="step__title">Данные компании</div>
+                        </div>
+                        <div class="flex-c">
+                          <span class="line"></span>
+                        </div class="flex-c">
+                        <div class="step">
+                          <div class="step__circle">4</div>
+                          <div class="step__title">Финансы</div>
+                        </div>
+                        <div class="flex-c">
+                          <span class="line"></span>
+                        </div>
+                        <div class="step">
+                          <div class="step__circle">5</div>
+                          <div class="step__title">Люди</div>
+                        </div>
+                     </div>
+                    <div class="form">
+                      <div class="form__title">О компании</div>
+                      <div class="upload__block">
+                        <div class="row upload__logo flex-c">
+                          <div class="col-lg-5 col-10 logo__named">
+                            <label for="withLogo">
+                              Лого с названием<br>
+                              <span>course_picture.png</span><br>
+                              <button class="button__upload">Загрузить</button>
+                            </label>
+                            <input type="file" name="" id="withLogo" class="input__file">
+                          </div>
+                          <div class="col-lg-5 col-10  logo__unnamed">
+                            <label for="noLogo">
+                              Лого без названия<br>
+                              <span>course_picture.png</span><br>
+                              <button class="button__upload">Загрузить</button>
+                            </label>
+                            <input type="file" name="" id="noLogo" class="input__file">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-10 wrapper__course">
+                            <label for="cover">
+                              Загрузите обложку курса или приветственное видео
+                              рекоммендуемое разрешение 1074x280<br>
+                              <span> course_picture.png </span> <br>
+                              <button class="button__upload">Загрузить</button>
+                            </label>
+                            <input type="file" id="cover" class="input__file">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                              <label for="companyType first" class="input__title">Тип компании</label><br>
+                              <input type="text" id="companyType" placeholder="Компания" class="ownForm inputText" >
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                              <label for="companyType" class="input__title">Полное наименоание компании</label><br>
+                              <input type="text" id="companyType" class="inputText" >
+                              
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                              <label for="companyType" class="input__title">Сокращенное наименование компании</label><br>
+                              <input type="text" id="companyType"  class="inputText">
+                              
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                              <label for="companyType" class="input__title">Наименование вашего сайта</label><br>
+                              <input type="text" id="companyType"  class="inputText">
+                              
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                              <label for="companyType" class="input__title">Подробно о компании</label><br>
+                                        
+                              <textarea id="companyType"  class="companyInfo inputText" style="min-height:90px ;"></textarea>
+                              </div>
+                          </div>
+                      <div class="row">
+                          <div class="col-12">
+                              <label for="companyType" class="input__title">Цель компании</label><br>
+                              <input type="text" id="companyType"  class="inputText">
+                              
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                            <label for="form__radio" class="ratio__title">У вас есть образовательная лицензия?</label><br>
+                              <div style="margin-top:  16px;">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Да
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Нет
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-6">
+                                  <label for="educat_doc" class="label__title">Образовательная лицензия</label><br>
+                                  <input type="text" id="educat_doc" class="education__input">
+                              </div>
+                              <div class="col-6">
+                                  <label for="educat_href" class="label__title">Ссылка на документ</label><br>
+                                  <input type="text" id="educat_href" class="education__input">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-12 company_history">
+                                  История компании
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-12">
+                                  <button class="history__button">Добавить веху</button>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-9">
+                              </div>
+                              <div class="col-3">
+                                  <a href="add_compStage1.html"><button class="nextStage">Следующий этап</button></a>
+                              </div>
+                          </div>
+                    </div>
+                    </div>
+                    
+  
+                  </div>
+              </div>
+              </div class="container"> 
+          </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

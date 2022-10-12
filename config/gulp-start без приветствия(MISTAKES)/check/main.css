@@ -1,0 +1,13 @@
+body {margin: 0; padding: 0; font-family: Helvetica, Arial, sans-serif; }
+
+
+.block__practic{
+	position: absolute;
+
+	width: 300px;
+	height: 150px;
+
+	background-color: black;
+	top: 50%;
+	right: 50%;
+}

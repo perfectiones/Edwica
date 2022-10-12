@@ -1,0 +1,55 @@
+@import "variable";
+@import "common";
+
+
+    .nopadding{
+        padding: 0;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+   
+    .section__text{     
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    
+    width: 333px;
+    color: #A897BD;
+
+    margin-right: 89px;
+
+    align-items: center;
+        span{
+            color:#3b383e ;
+        }
+    }
+    
+    .section__content{
+        padding-bottom: 48px;
+    }
+    .line{
+        border: 1px solid #EFE8F8;
+
+        margin: 27px -15px 19px -49px;
+    }
+
+
+@media (max-width:900px) {
+    .section__content{
+        flex-direction: column-reverse;
+    }
+    .section__text{
+        margin-top: 16px;
+        margin-bottom: 19px;
+        margin-right: 0;
+    }
+    .button__add{  
+        width: 288px !important;
+        margin: 17px 17px 40px;
+    }
+}
